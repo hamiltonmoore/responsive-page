@@ -107,9 +107,36 @@ header {
 
 /*tablet*/
 
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    header {}
+    #main_nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #main_nav a {
+        width: 28%;
+    }
+    #sidebar_content {
+        display: flex;
+    }
+    #sidebar_content > div {
+        width: 100%;
+    }
+}
 
 
 /*desktop*/
 
-@media (min-width: 1100px) {}
+@media (min-width: 1100px) {
+    header {
+        display: flex;
+    }
+    #logo {
+        display: flex;
+        align-content: flex-start;
+    }
+    #main_nav {
+        width: 33%;
+    }
+}
