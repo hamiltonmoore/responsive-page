@@ -131,12 +131,19 @@ header {
 @media (min-width: 1100px) {
     header {
         display: flex;
+        align-items: flex-start;
     }
     #logo {
         display: flex;
-        align-content: flex-start;
+        flex: 3;
+        padding-left: 2rem;
+        font-size: 32px;
     }
     #main_nav {
-        width: 33%;
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+    #main_nav {
+        align-self: flex-end;
     }
 }
